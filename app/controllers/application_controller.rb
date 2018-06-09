@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
-  
+
 
   delete '/posts/:id/delete' do
     @post = Post.find(params[:id])
