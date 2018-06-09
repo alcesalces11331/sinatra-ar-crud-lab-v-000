@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Edit</title>
-  </head>
-  <body>
-    <form action="/posts/<% = @post.id %>" method="POST">
-      <input id="hidden" type="hidden" name="_method" value="PATCH">
+<form action="/posts/<% = @post.id %>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
 
-      <label for="name">Post Name: <input id="name" type='text' name="name"></label>
+  <label for="name">Post Name: <input id="name" type='text' name="name"></label>
 
-      <label for="content">Post Content: <input id="content" type='text' name='content'></label>
+  <label for="content">Post Content: <input id="content" type='text' name='content'></label>
 
-      <input type="submit" name="submit" id="submit">
-    </form>
-  </body>
-</html>
+  <input type="submit" name="submit" id="submit">
+</form>
